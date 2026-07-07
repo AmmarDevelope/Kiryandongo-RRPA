@@ -262,6 +262,9 @@
   .h-25 {
     height: calc(var(--spacing) * 25);
   }
+  .h-35 {
+    height: calc(var(--spacing) * 35);
+  }
   .h-40 {
     height: calc(var(--spacing) * 40);
   }
@@ -1003,6 +1006,11 @@
   .\[\@media\(max-width\:460px\)\]\:text-green-900 {
     @media (max-width:460px) {
       color: var(--color-green-900);
+    }
+  }
+  .\[\@media\(max-width\:480px\)\]\:h-25 {
+    @media (max-width:480px) {
+      height: calc(var(--spacing) * 25);
     }
   }
   .\[\@media\(max-width\:4px\)\]\:w-full {
