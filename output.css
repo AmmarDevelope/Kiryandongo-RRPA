@@ -17,7 +17,6 @@
     --color-yellow-800: oklch(47.6% 0.114 61.907);
     --color-yellow-900: oklch(42.1% 0.095 57.708);
     --color-green-500: oklch(72.3% 0.219 149.579);
-    --color-green-800: oklch(44.8% 0.119 151.328);
     --color-green-900: oklch(39.3% 0.095 152.535);
     --color-cyan-200: oklch(91.7% 0.08 205.041);
     --color-cyan-400: oklch(78.9% 0.154 211.53);
@@ -28,7 +27,6 @@
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
-    --container-6xl: 72rem;
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
     --text-lg: 1.125rem;
@@ -46,7 +44,6 @@
     --radius-md: 0.375rem;
     --radius-2xl: 1rem;
     --radius-3xl: 1.5rem;
-    --radius-4xl: 2rem;
     --animate-pulse: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
     --animate-bounce: bounce 1s infinite;
     --default-font-family: var(--font-sans);
@@ -232,6 +229,9 @@
       max-width: 96rem;
     }
   }
+  .mx-auto {
+    margin-inline: auto;
+  }
   .my-9 {
     margin-block: calc(var(--spacing) * 9);
   }
@@ -262,14 +262,8 @@
   .h-25 {
     height: calc(var(--spacing) * 25);
   }
-  .h-35 {
-    height: calc(var(--spacing) * 35);
-  }
-  .h-40 {
-    height: calc(var(--spacing) * 40);
-  }
-  .h-45 {
-    height: calc(var(--spacing) * 45);
+  .h-auto {
+    height: auto;
   }
   .min-h-screen {
     min-height: 100vh;
@@ -280,14 +274,14 @@
   .w-25 {
     width: calc(var(--spacing) * 25);
   }
-  .w-80 {
-    width: calc(var(--spacing) * 80);
+  .w-36 {
+    width: calc(var(--spacing) * 36);
+  }
+  .w-50 {
+    width: calc(var(--spacing) * 50);
   }
   .w-full {
     width: 100%;
-  }
-  .max-w-full {
-    max-width: 100%;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -554,6 +548,16 @@
       }
     }
   }
+  .md\:w-36 {
+    @media (width >= 48rem) {
+      width: calc(var(--spacing) * 36);
+    }
+  }
+  .md\:w-72 {
+    @media (width >= 48rem) {
+      width: calc(var(--spacing) * 72);
+    }
+  }
   .md\:w-80 {
     @media (width >= 48rem) {
       width: calc(var(--spacing) * 80);
@@ -671,6 +675,11 @@
   .lg\:w-50 {
     @media (width >= 64rem) {
       width: calc(var(--spacing) * 50);
+    }
+  }
+  .lg\:w-72 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 72);
     }
   }
   .lg\:animate-bounce {
