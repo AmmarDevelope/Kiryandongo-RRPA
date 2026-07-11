@@ -256,6 +256,9 @@
   .table {
     display: table;
   }
+  .h-20 {
+    height: calc(var(--spacing) * 20);
+  }
   .h-22 {
     height: calc(var(--spacing) * 22);
   }
@@ -267,6 +270,9 @@
   }
   .min-h-screen {
     min-height: 100vh;
+  }
+  .w-20 {
+    width: calc(var(--spacing) * 20);
   }
   .w-22 {
     width: calc(var(--spacing) * 22);
